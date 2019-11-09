@@ -1,6 +1,5 @@
 {
   "name": "amour",
-  "homepage": "https://vmumble.ddns.net/amour/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,9 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "postbuild": "yarn upload",
-    "upload": "export $(cat .env | grep PKG | xargs) && rsync -avz -e 'ssh' ./build $PKG_DEPLOY_HOST:$PKG_DEPLOY_PATH"
+    "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": "react-app"
